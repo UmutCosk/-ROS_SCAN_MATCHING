@@ -1,0 +1,9 @@
+<launch>
+
+
+<node pkg="scan_matching" name="icp" type="localizer" output="screen"/>
+<node type="rviz" name="rviz" pkg="rviz" args="-d $(find scan_matching)/cfg/rviz_cfg.rviz"/>
+
+
+
+</launch>
